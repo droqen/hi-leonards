@@ -13,6 +13,19 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'{bot.user} is now online!')
 
+@bot.event
+async def on_message(message):
+    # Don't respond to our own messages
+    if message.author == bot.user:
+        return
+    
+    # Process commands if the message is a command
+    await bot.process_commands(message)
+    
+    # Respond to messages that mention the bot
+    if bot.user.mentioned_in(message):
+        await message.channel.send(f"Hello {message.author.mention}, I noticed you mentioned me!")
+
 @bot.command(name='leonard')
 async def leonard(ctx, *args):
     """Makes Leonard speak with natural pauses"""
