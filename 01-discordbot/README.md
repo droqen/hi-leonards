@@ -1,5 +1,7 @@
 # Leonard Discord Bot
 
+_This readme and significant amounts of code produced using genAI as part of a particular process. I never use this stuff for my 'real' works, but I am for this and similar experiments which are not intended to be released in any official sense._
+
 Welcome to the Leonard Discord Bot repository! This bot is designed to interact with users on Discord with a unique typing effect that simulates natural pauses, making conversations feel more lifelike.
 
 ## Features
