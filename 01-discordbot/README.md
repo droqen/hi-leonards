@@ -15,8 +15,8 @@ Welcome to the Leonard Discord Bot repository! This bot is designed to interact 
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/yourusername/leonard-bot.git
-   cd leonard-bot
+   git clone {pii removed}
+   cd {pii removed}
    ```
 
 2. **Install Dependencies**:
@@ -28,7 +28,7 @@ Welcome to the Leonard Discord Bot repository! This bot is designed to interact 
 3. **Set Up Your Bot Token**:
    - Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications).
    - Copy the bot token.
-   - Replace the token in `discord_bot.py` with your own bot token.
+   - Create file `secret.py` with `BOT_TOKEN={your own bot token}`.
 
 4. **Run the Bot**:
    ```bash
